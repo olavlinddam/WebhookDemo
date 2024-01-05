@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/WebhookDemo.Api.props" />
+</Project>

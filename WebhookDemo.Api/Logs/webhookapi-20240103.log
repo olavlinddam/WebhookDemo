@@ -1,0 +1,42 @@
+2024-01-03 09:07:12.967 +01:00  WRN  Failed to determine the https port for redirect.
+2024-01-03 09:07:49.046 +01:00  WRN  This is a warning message from the WebhookController.
+2024-01-03 09:14:48.205 +01:00  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'WebhookDemo.Api.Controllers.AuthenticationController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-01-03 09:15:50.732 +01:00  WRN  Failed to determine the https port for redirect.
+2024-01-03 09:19:25.400 +01:00  WRN  Failed to determine the https port for redirect.
+2024-01-03 09:20:09.502 +01:00  WRN  Failed to determine the https port for redirect.
+2024-01-03 09:26:10.770 +01:00  WRN  Failed to determine the https port for redirect.
+2024-01-03 09:26:52.417 +01:00  INF  User profile is available. Using '/home/olav/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-03 09:26:52.598 +01:00  INF  Unable to bind to http://localhost:5001 on the IPv6 loopback interface: 'Cannot assign requested address'.
+2024-01-03 09:26:52.598 +01:00  INF  Now listening on: http://localhost:5001
+2024-01-03 09:26:52.599 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2024-01-03 09:26:52.599 +01:00  INF  Hosting environment: Development
+2024-01-03 09:26:52.599 +01:00  INF  Content root path: /home/olav/Documents/Code/Oxygen/WebhookDemo/WebhookDemo.Api
+2024-01-03 09:26:54.131 +01:00  INF  Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - -
+2024-01-03 09:26:54.344 +01:00  INF  Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 217.3056ms
+2024-01-03 09:26:54.493 +01:00  INF  Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - -
+2024-01-03 09:26:54.576 +01:00  INF  Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.7487ms
+2024-01-03 09:26:58.427 +01:00  INF  Request starting HTTP/1.1 POST http://localhost:5001/api/Authentication/login?userName=asd&password=asd - 0
+2024-01-03 09:26:58.431 +01:00  WRN  Failed to determine the https port for redirect.
+2024-01-03 09:26:58.526 +01:00  INF  Executing endpoint 'WebhookDemo.Api.Controllers.AuthenticationController.Login (WebhookDemo.Api)'
+2024-01-03 09:26:58.548 +01:00  INF  Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String, System.String) on controller WebhookDemo.Api.Controllers.AuthenticationController (WebhookDemo.Api).
+2024-01-03 09:26:58.569 +01:00  INF  Invalid login attempt from ip: 127.0.0.1
+2024-01-03 09:26:58.576 +01:00  INF  Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2024-01-03 09:26:58.579 +01:00  INF  Executed action WebhookDemo.Api.Controllers.AuthenticationController.Login (WebhookDemo.Api) in 27.7049ms
+2024-01-03 09:26:58.581 +01:00  INF  Executed endpoint 'WebhookDemo.Api.Controllers.AuthenticationController.Login (WebhookDemo.Api)'
+2024-01-03 09:26:58.582 +01:00  INF  Request finished HTTP/1.1 POST http://localhost:5001/api/Authentication/login?userName=asd&password=asd - 0 - 401 - text/plain;+charset=utf-8 154.6315ms
