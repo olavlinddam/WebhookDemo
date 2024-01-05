@@ -1,0 +1,10 @@
+2024-01-02 12:45:09.023 +01:00  INF  Unable to bind to http://localhost:5116 on the IPv6 loopback interface: 'Cannot assign requested address'.
+2024-01-02 12:45:09.051 +01:00  INF  Now listening on: http://localhost:5116
+2024-01-02 12:45:09.051 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2024-01-02 12:45:09.051 +01:00  INF  Hosting environment: Development
+2024-01-02 12:45:09.051 +01:00  INF  Content root path: /home/olav/Documents/Code/Oxygen/WebhookDemo/WebhookDemo.Api
+2024-01-02 12:45:09.285 +01:00  INF  Request starting HTTP/1.1 GET http://localhost:5116/swagger/index.html - -
+2024-01-02 12:45:09.448 +01:00  INF  Request finished HTTP/1.1 GET http://localhost:5116/swagger/index.html - - - 200 - text/html;charset=utf-8 164.3034ms
+2024-01-02 12:45:09.555 +01:00  INF  Request starting HTTP/1.1 GET http://localhost:5116/swagger/v1/swagger.json - -
+2024-01-02 12:45:09.602 +01:00  INF  Request finished HTTP/1.1 GET http://localhost:5116/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 47.4013ms
+2024-01-02 12:45:41.965 +01:00  INF  Application is shutting down...
